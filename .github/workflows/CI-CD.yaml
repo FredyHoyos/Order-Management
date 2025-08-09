@@ -37,3 +37,4 @@ jobs:
           run: vercel pull --yes --token=${{ secrets.VERCEL_TOKEN }}
         - name: Deployment
           run: vercel deploy --no-wait --token=${{ secrets.VERCEL_TOKEN }}
+          
