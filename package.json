@@ -2,6 +2,9 @@
   "name": "order-management",
   "version": "0.1.0",
   "private": true,
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
@@ -36,12 +39,13 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/bcrypt": "^5.0.2",
-    "@types/node": "^20",
-    "@types/react": "^19.1.8",
+    "@types/node": "^20.19.10",
+    "@types/react": "19.1.9",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
     "prisma": "^6.11.1",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }
